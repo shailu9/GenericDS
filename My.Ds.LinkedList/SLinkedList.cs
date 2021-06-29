@@ -47,13 +47,13 @@ namespace My.Ds.LinkedList
             return node._data;
         }
 
-        public void InsertAfter(Node<T> target, T item)
+        public void InsertAfter(object target, T item)
         {
             try
             {
                 Node<T> node = new Node<T>(item);
-                node._next = target._next;
-                target._next = node;
+                node._next = ((Node<T>)target)._next;
+                ((Node<T>)target)._next = node;
                 this._size += 1;
             }
             catch (Exception ex)

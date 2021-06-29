@@ -28,7 +28,7 @@ namespace My.Ds.LinkedList
         /// </summary>
         /// <param name="target">Node after which element is to be inserted</param>
         /// <param name="item">new node to be inserted</param>
-        public void InsertAfter(Node<T> target, T item);
+        public void InsertAfter(object target, T item);
         /// <summary>
         /// Merge with given linked list one after another 
         /// </summary>
